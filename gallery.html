@@ -52,14 +52,28 @@
       <div class="masonry-item reveal"><img src="images/1.jpeg" alt="Ripe coffee cherries"><span class="caption">Ripe cherries</span></div>
       <div class="masonry-item reveal"><img src="images/4.jpeg" alt="Coffee farmer portrait"><span class="caption">Farmer · Nandi County</span></div>
       <div class="masonry-item reveal"><img src="images/founder.jpg" alt="Coffee blossoms"><span class="caption">Coffee blossoms</span></div>
+      <div class="masonry-item reveal"><img src="images/pack.jpeg" alt="packing"><span class="caption">Packing...</span></div>
       <div class="masonry-item reveal"><img src="images/images.jpg" alt="Harvest"><span class="caption">Harvest baskets</span></div>
       <div class="masonry-item reveal"><img src="images/3.jpeg" alt="Washing station channels"><span class="caption">Coffee Assesment</span></div>
-      <div class="masonry-item reveal"><img src="images/drying.jpg" alt="Coffee drying on raised beds"><span class="caption">Drying beds</span></div>
+      <div class="masonry-item reveal"><img src="images/dry.jpeg" alt="Coffee drying on raised beds"><span class="caption">Drying bed</span></div>
+      <div class="masonry-item reveal"><img src="images/sunheat.jpeg" alt="Sun-dried to perfection"><span class="caption">Sun-dried to perfection</span></div>
+      
+ 
       <div class="masonry-item reveal"><img src="images/sorting.jpg" alt="Hands sorting green coffee"><span class="caption">Hand sorting</span></div>
       <div class="masonry-item reveal"><img src="images/greenbeans.jpg" alt="Green coffee beans in burlap"><span class="caption">Green beans · ready</span></div>
       <div class="masonry-item reveal"><img src="images/highlands.jpg" alt="Aerial of the Kenyan highlands"><span class="caption">Highland aerial</span></div>
-      <div class="masonry-item reveal"><img src="images/farm.jpeg" alt="Export bags of Kenya AA coffee"><span class="caption">Farm</span></div>
+      <div class="masonry-item reveal"><img src="images/farm.jpeg" alt="Farm"><span class="caption">Farm</span></div>
+      
       <div class="masonry-item reveal"><img src="images/farmer1.jpeg" alt="Farmer portrait"><span class="caption">A face of origin</span></div>
+      <!-- Video Item Added Here -->
+      <div class="masonry-item reveal">
+        <div class="video-rotator">
+          <video id="masonry-video" autoplay loop muted playsinline src="images/Coffee.mp4"></video>
+        </div>
+        <span class="caption">Processing · Video</span>
+      </div>
+      <div class="masonry-item reveal"><img src="images/dryF.jpeg" alt="Process...."><span class="caption">Process....</span></div>
+      <div class="masonry-item reveal"><img src="images/11.jpeg" alt="Fresh Harvest Intake"><span class="caption">Fresh Harvest Intake</span></div>
     </div>
   </div>
 </section>
@@ -107,5 +121,13 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('masonry-video');
+    if (video) {
+      video.playbackRate = 0.5;
+    }
+  });
+</script>
 </body>
 </html>
