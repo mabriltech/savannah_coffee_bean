@@ -30,7 +30,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="gallery.html" class="active">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
-      </ul><br>
+      </ul>
       <a href="contact.html" class="nav-cta">Partner With Us</a>
       <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </nav>
@@ -62,7 +62,6 @@
      <div class="masonry-item reveal"><img src="images/farm.jpeg" alt="Farm"><span class="caption">Farm</span></div>
       
       <div class="masonry-item reveal"><img src="images/farmer1.jpeg" alt="Farmer portrait"><span class="caption">A face of origin</span></div>
-      <!-- Video Item Added Here -->
       <div class="masonry-item reveal">
         <div class="video-rotator">
           <video id="masonry-video" autoplay loop muted playsinline src="images/Coffee.mp4"></video>
@@ -75,15 +74,13 @@
   </div>
 </section>
 
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox">
-  <button class="lightbox-close" aria-label="Close">✕</button>
-  <button class="lightbox-prev" aria-label="Previous">‹</button>
-  <button class="lightbox-next" aria-label="Next">›</button>
-  <img src="" alt="">
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog">
+  <button class="lightbox-close" aria-label="Close Gallery">✕</button>
+  <button class="lightbox-prev" aria-label="Previous Image">‹</button>
+  <button class="lightbox-next" aria-label="Next Image">›</button>
+  <img src="" alt="Enlarged view of gallery item">
 </div>
 
-<!-- CTA -->
 <section class="partnership" style="padding:90px 0">
   <div class="container" style="text-align:center">
     <h2 style="color:var(--cream);font-weight:400">Want to source directly from <em style="color:var(--gold);font-style:italic">origin</em>?</h2>
@@ -92,7 +89,6 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-brand">
@@ -120,9 +116,16 @@
 <script src="js/main.js"></script>
 <script>
   window.addEventListener('DOMContentLoaded', () => {
+    // Set video playback speed
     const video = document.getElementById('masonry-video');
     if (video) {
       video.playbackRate = 0.5;
+    }
+
+    // Automatically inject the current year into the footer
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
     }
   });
 </script>
