@@ -332,7 +332,7 @@ body.menu-open .nav-toggle span:nth-child(3){bottom:auto;top:50%;transform:trans
 
 /* ============ Final CTA ============ */
 .cta-final{
-  background:url('../images/cherries.jpg') center/cover no-repeat fixed;
+  background:url('../images/export.jpeg') center/cover no-repeat fixed;
   color:var(--cream);text-align:center;
   position:relative;padding:140px 0;
 }
@@ -463,6 +463,18 @@ body.menu-open .nav-toggle span:nth-child(3){bottom:auto;top:50%;transform:trans
   transition:all .4s var(--ease);
 }
 .masonry-item:hover .caption{opacity:1;transform:translateY(0)}
+/* Container adjustments to hold the rotated video */
+.masonry-item {
+  position: relative;
+  overflow: hidden; /* Prevents the video from spilling out */
+}
+
+/* Rotate the video and ensure it scales correctly */
+video.rotate-90 {
+  transform: rotate(90deg);
+  transform-origin: center center;
+  object-fit: cover; /* Keeps the video crisp and filling the space */
+}
 
 /* Lightbox */
 .lightbox{
